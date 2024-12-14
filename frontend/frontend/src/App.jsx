@@ -9,6 +9,9 @@ import LoginModal from "./Components/LoginModal/LoginModal";
 
 function App() {
   const [login, setlogin] = useState(false);
+  // useEffect(()=>{
+  //   setlogin(true);
+  // },[])
   return (
     <>
       {login ? <LoginModal setlogin={setlogin} /> : <></>}
