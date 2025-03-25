@@ -13,7 +13,7 @@ const AddProduct = () => {
     name: "",
     description: "",
     price: "",
-    category: "salad",
+    category: "Salad",
   });
 
   const food_Item_list = Object.values(itemCategory);
@@ -37,7 +37,7 @@ const AddProduct = () => {
         name: "",
         description: "",
         price: "",
-        category: "salad",
+        category: "Salad",
       });
       setImage(false);
       toast.success(response.data.message);

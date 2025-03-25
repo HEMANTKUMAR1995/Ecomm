@@ -1,7 +1,7 @@
 export const itemCategory = {
   salad: "Salad",
   rolls: "Rolls",
-  desert: "Desert",
+  desert: "Deserts",
   sandwich: "Sandwich",
   cake: "Cake",
   pureVeg: "Pure Veg",
