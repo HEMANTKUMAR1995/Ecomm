@@ -2,8 +2,8 @@ import { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../Context/StoreContext";
 import { useNavigate } from "react-router-dom";
-import { cartItemTitles } from "../../../../../Admin/vite-project/src/Constants";
 import axios from "axios";
+import { cartItemTitles } from "../../Constants";
 
 function Cart() {
   const { removeFromCart, food_list, cartItems, cartTotalCartAmt, URl } =
@@ -12,7 +12,7 @@ function Cart() {
   function getCartDetails() {
     const cab = axios.get(URl + "/api/v1/cart/add");
     cab
-      .then((res, rej) => {
+      .then((res) => {
         const value = res.json();
         console.log("***", value);
       })

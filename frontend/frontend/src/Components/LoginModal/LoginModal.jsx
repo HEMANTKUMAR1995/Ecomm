@@ -4,8 +4,8 @@ import "./LoginModal.css";
 import { assets_list } from "../../assets/assets";
 import { useContext } from "react";
 import { StoreContext } from "../../Context/StoreContext";
-import { endPoints } from "../../../../../Admin/vite-project/src/Constants";
 import axios from "axios";
+import { endPoints } from "../../Constants";
 
 const LoginModal = ({ setlogin }) => {
   const [currentState, setCurrentState] = useState("Login");
