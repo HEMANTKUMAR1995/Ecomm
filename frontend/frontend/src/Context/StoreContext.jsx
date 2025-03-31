@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 // import { food_list } from "../assets/assets";
 import { useEffect } from "react";
 import axios from "axios";
+import { SERVER_URL } from "../../config";
 
 export const StoreContext = createContext(null);
 
@@ -12,8 +13,8 @@ const StoreContextProvider = (props) => {
   const [food_list, setFood_list] = useState();
   const [imageData, setImageData] = useState({});
   // const [setTokenBackUp, setSetTokenBackUp] = useState({ token: "" });
-  const URl = "http://localhost:8080";
-
+  const URl = SERVER_URL;
+  
   const addToCart = (itemId) => {
     if (!cartItems[itemId]) {
       setCartItem((prev) => ({ ...prev, [itemId]: 1 }));
@@ -100,4 +101,4 @@ const StoreContextProvider = (props) => {
   );
 };
 
-export default  StoreContextProvider;
+export default StoreContextProvider;
